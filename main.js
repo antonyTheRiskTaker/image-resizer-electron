@@ -29,6 +29,9 @@ app.whenReady().then(() => {
   });
 });
 
+// Menu template
+// TODO: continue from here
+
 // (Lines below) these lines of code make sure your desktop app is cross-platform.
 app.on('window-all-closed', () => {
   if (!isMac) {

@@ -5,7 +5,8 @@
   "description": "App to resize image dimensions",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dev-start": "electronmon ."
   },
   "author": "Antony Lo",
   "license": "MIT",
@@ -13,5 +14,8 @@
     "electron": "^21.3.1",
     "resize-img": "^2.0.0",
     "toastify-js": "^1.12.0"
+  },
+  "devDependencies": {
+    "electronmon": "^2.0.2"
   }
 }

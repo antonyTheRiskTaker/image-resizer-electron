@@ -7,5 +7,5 @@ function createMainWindow() {
     height: 600
   });
 
-  mainWindow.loadFile();
+  mainWindow.loadFile(); // TODO: continue from here
 }

@@ -20,6 +20,9 @@ function createMainWindow() {
   mainWindow.loadFile(path.join(__dirname, './renderer/index.html'));
 }
 
+// Create about window
+// TODO: continue from here
+
 // App is ready
 app.whenReady().then(() => {
   createMainWindow();
@@ -37,9 +40,23 @@ app.whenReady().then(() => {
 
 // Menu template
 const menu = [
+  ...(isMac ? [{
+    label: app.name,
+    submenu: [
+      {
+        label: 'About',
+      }
+    ]
+  }] : []),
   {
     role: 'fileMenu',
   },
+  ...(!isMac ? [{
+    label: 'Help',
+    submenu: [{
+      label: 'About',
+    }],
+  }] : [])
 ];
 
 // (Lines below) these lines of code make sure your desktop app is cross-platform.

@@ -30,7 +30,18 @@ app.whenReady().then(() => {
 });
 
 // Menu template
-// TODO: continue from here
+const menu = [
+  {
+    label: 'File',
+    submenu: [
+      {
+        label: 'Quit',
+        click: () => app.quit(),
+        accelerator: 'CmdOrCtrl+W'
+      }
+    ]
+  }
+];
 
 // (Lines below) these lines of code make sure your desktop app is cross-platform.
 app.on('window-all-closed', () => {

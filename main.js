@@ -38,15 +38,8 @@ app.whenReady().then(() => {
 // Menu template
 const menu = [
   {
-    label: 'File',
-    submenu: [
-      {
-        label: 'Quit',
-        click: () => app.quit(),
-        accelerator: 'CmdOrCtrl+W'
-      }
-    ]
-  }
+    role: 'fileMenu',
+  },
 ];
 
 // (Lines below) these lines of code make sure your desktop app is cross-platform.
